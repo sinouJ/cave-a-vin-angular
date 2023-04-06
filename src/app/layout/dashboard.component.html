@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<ng-content select="[dashboardHeader]"></ng-content>
+</nav>
+
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="col-12 col-md-3 col-xl-2 bg-light">
+			<ng-content select="[dashboardSidebar]"></ng-content>
+		</div>
+
+		<div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-white">
+			<ng-content></ng-content>
+		</div>
+	</div>
+</div>
