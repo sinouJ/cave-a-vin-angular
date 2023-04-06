@@ -1,0 +1,6 @@
+<div>
+  <p>Bienvenue dans votre cave {{utilisateur?.prenom}}</p>
+  <p>Votre cave contient {{nb_bouteilles}} bouteilles</p>
+  <p>Il y a {{nb_emplacements}} disponibles</p>
+  <p>Dernière bouteille bue : {{derniere_bouteille?.vin?.appellation?.nom}}, {{derniere_bouteille?.vin?.nom}} {{derniere_bouteille?.vin?.millesime}} (bue le {{derniere_bouteille?.dateSortie | date:"longDate"}})</p>
+</div>

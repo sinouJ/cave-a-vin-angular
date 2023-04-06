@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'cave-a-vin-angular';
 
   constructor() {
-    SESSION.login('Prénom', 'NOM');
+    SESSION.login('Jordan', 'Sinou');
   }
 }

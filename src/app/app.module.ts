@@ -1,5 +1,8 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr);
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +12,7 @@ import { MainComponent } from './main/main.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './layout/dashboard.component';
 import { UserButtonComponent } from './header/user-button/user-button.component';
+import { InfosCaveComponent } from './main/infos-cave/infos-cave.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,16 @@ import { UserButtonComponent } from './header/user-button/user-button.component'
     MainComponent,
     SidebarComponent,
     DashboardComponent,
-    UserButtonComponent
+    UserButtonComponent,
+    InfosCaveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR'},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

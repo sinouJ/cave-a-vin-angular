@@ -8,12 +8,14 @@ import { SESSION } from 'src/app/domain/services/session.service';
   styleUrls: ['./user-button.component.scss']
 })
 export class UserButtonComponent implements OnInit {
+  utilisateur?: Utilisateur;
   
-  constructor(private utilisateur?: Utilisateur) {
-    this.utilisateur = utilisateur;
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.utilisateur = SESSION.user;
+    console.log(this.utilisateur)
   }
+
+
 }
