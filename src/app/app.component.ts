@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SESSION } from './domain/services/session.service';
 
 @Component({
   selector: 'cave-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cave-a-vin-angular';
+
+  constructor() {
+    SESSION.login('Prénom', 'NOM');
+  }
 }
