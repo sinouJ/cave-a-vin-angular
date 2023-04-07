@@ -13,6 +13,7 @@ export class InfosCaveComponent implements OnInit {
   nb_bouteilles?: number;
   nb_emplacements?: number;
   derniere_bouteille?: Bouteille
+  isDetailVisible: boolean = false;
 
   constructor() { }
 
@@ -23,4 +24,8 @@ export class InfosCaveComponent implements OnInit {
     this.derniere_bouteille = this.utilisateur?.cave?.derniereBouteilleBue
   }
 
+  toggleDetail(): void {
+    this.isDetailVisible = !this.isDetailVisible
+    console.log(this.isDetailVisible)
+  }
 }

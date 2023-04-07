@@ -1,0 +1,48 @@
+<div class="card card-primary">
+  <div class="card-header">
+    Informations sur la bouteille
+  </div>
+
+  <div class="card-body">
+    <form class="form-horizontal" role="form">
+      <div class="row">
+        <label class="col-sm-3 control-label">Appellation</label>
+        <div class="col-sm-9">
+          <p class="form-control-static">{{bouteille?.vin?.appellation?.nom}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-3 control-label">Nom</label>
+        <div class="col-sm-9">
+          <p class="form-control-static"> {{bouteille?.vin?.nom}} </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-3 control-label">Millésime</label>
+        <div class="col-sm-9">
+          <p class="form-control-static"> {{bouteille?.vin?.millesime}} </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-3 control-label">Date achat</label>
+        <div class="col-sm-9">
+          <p class="form-control-static"> {{bouteille?.dateEntree | date:'longDate'}} </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-3 control-label">Prix</label>
+        <div class="col-sm-9">
+          <p class="form-control-static"> {{bouteille?.prix | currency:'EUR' }} </p>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+    <!-- Mettre ici le commentaire de la bouteille -->
+  </div>
+</div>

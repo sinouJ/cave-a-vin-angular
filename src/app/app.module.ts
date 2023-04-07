@@ -13,6 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './layout/dashboard.component';
 import { UserButtonComponent } from './header/user-button/user-button.component';
 import { InfosCaveComponent } from './main/infos-cave/infos-cave.component';
+import { DetailBouteilleComponent } from './main/detail-bouteille/detail-bouteille.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { InfosCaveComponent } from './main/infos-cave/infos-cave.component';
     SidebarComponent,
     DashboardComponent,
     UserButtonComponent,
-    InfosCaveComponent
+    InfosCaveComponent,
+    DetailBouteilleComponent,
   ],
   imports: [
     BrowserModule,
