@@ -8,4 +8,8 @@ import { Component } from "@angular/core";
 
 export class LoginComponent {
   title = "cave-a-vin-angular";
+
+  connexion(nom: string, prenom: string): void {
+    console.log(nom, prenom)
+  }
 }

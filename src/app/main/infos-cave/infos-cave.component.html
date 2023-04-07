@@ -3,5 +3,6 @@
   <p>Bienvenue dans votre cave <b>{{utilisateur?.prenom}}</b></p>
   <p>Votre cave contient {{nb_bouteilles}} bouteilles</p>
   <p>Il y a {{nb_emplacements}} disponibles</p>
-  <p>Dernière bouteille bue : <a (click)="toggleDetail()">{{derniere_bouteille?.vin?.appellation?.nom}}, {{derniere_bouteille?.vin?.nom}} {{derniere_bouteille?.vin?.millesime}}</a> (bue le {{derniere_bouteille?.dateSortie | date:"longDate"}})</p>
+  <cave-liste-bouteilles></cave-liste-bouteilles>
+  <!-- <p>Dernière bouteille bue : <a (click)="toggleDetail()">{{derniere_bouteille?.vin?.appellation?.nom}}, {{derniere_bouteille?.vin?.nom}} {{derniere_bouteille?.vin?.millesime}}</a> (bue le {{derniere_bouteille?.dateSortie | date:"longDate"}})</p> -->
 </div>

@@ -15,16 +15,16 @@
 
             <p>
               <label for="prenom" data-icon="p"> Votre prénom </label>
-              <input id="prenom" name="prenom" type="text" placeholder="Prénom" />
+              <input id="prenom" name="prenom" type="text" placeholder="Prénom" #prenom/>
             </p>
 
             <p>
               <label for="nom" data-icon="u"> Votre nom </label>
-              <input id="nom" name="nom" type="text" placeholder="Nom" />
+              <input id="nom" name="nom" type="text" placeholder="Nom" #nom/>
             </p>
 
             <p class="login button">
-              <input type="button" value="Se connecter" />
+              <input type="button" value="Se connecter" (click)="connexion(nom.value, prenom.value)"/>
             </p>
           </form>
         </div>

@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    Commentaire de dégustation
+  </div>
+
+  <div class="card-body" *ngIf="commentaire">
+    {{commentaire?.contenu}}
+    <br><br>
+
+    Note : {{commentaire?.note}}<br>
+  </div>
+  <div class="card-body" *ngIf="!commentaire">
+    Aucun commentaire
+  </div>
+</div>

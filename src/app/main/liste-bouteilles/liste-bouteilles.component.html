@@ -1,0 +1,27 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Bouteille</th>
+      <th>Bue le</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let btl of bouteilles">
+      <td>
+        <a>
+          {{btl.vin.nom}}
+        </a>
+      </td>
+
+      <td>
+        {{btl.dateSortie}}
+      </td>
+
+      <td>
+        {{btl.commentaire?.note}}
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -14,6 +14,8 @@ import { DashboardComponent } from './layout/dashboard.component';
 import { UserButtonComponent } from './header/user-button/user-button.component';
 import { InfosCaveComponent } from './main/infos-cave/infos-cave.component';
 import { DetailBouteilleComponent } from './main/detail-bouteille/detail-bouteille.component';
+import { CommentaireBouteilleComponent } from './main/commentaire-bouteille/commentaire-bouteille.component';
+import { ListeBouteillesComponent } from './main/liste-bouteilles/liste-bouteilles.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { DetailBouteilleComponent } from './main/detail-bouteille/detail-bouteil
     UserButtonComponent,
     InfosCaveComponent,
     DetailBouteilleComponent,
+    CommentaireBouteilleComponent,
+    ListeBouteillesComponent,
   ],
   imports: [
     BrowserModule,
